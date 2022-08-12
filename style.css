@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./bg.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#scoreBox {
+  position: absolute;
+  top: 9px;
+  right: 150px;
+  font-size: 40px;
+
+  font-family: "Rubik Distressed", cursive;
+}
+#hiscoreBox {
+  position: absolute;
+  top: 60px;
+  right: 150px;
+  font-size: 40px;
+
+  font-family: "Rubik Distressed", cursive;
+}
+#board {
+  background: linear-gradient(rgb(144, 171, 144), rgb(174, 174, 140));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+.head {
+  background: linear-gradient(red, yellow);
+  border: 0.25vmin solid purple;
+  border-radius: 9px;
+}
+.snake {
+  background-color: purple;
+  border: 0.25vmin solid white;
+  border-radius: 12px;
+}
+.food {
+  background: linear-gradient(red, purple);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
